@@ -14219,6 +14219,46 @@
                 "year": 2019,
                 "EIC": "3+kids",
                 "value": 6557.0
+            },
+            {
+                "year": 2020,
+                "EIC": "0kids",
+                "value": 538.0
+            },
+            {
+                "year": 2020,
+                "EIC": "1kid",
+                "value": 3584.0
+            },
+            {
+                "year": 2020,
+                "EIC": "2kids",
+                "value": 5920.0
+            },
+            {
+                "year": 2020,
+                "EIC": "3+kids",
+                "value": 6660.0
+            },
+            {
+                "year": 2021,
+                "EIC": "0kids",
+                "value": 543.0
+            },
+            {
+                "year": 2021,
+                "EIC": "1kid",
+                "value": 3618.0
+            },
+            {
+                "year": 2021,
+                "EIC": "2kids",
+                "value": 5980.0
+            },
+            {
+                "year": 2021,
+                "EIC": "3+kids",
+                "value": 6728.0
             }
         ],
         "validators": {
@@ -14515,6 +14555,46 @@
                 "year": 2019,
                 "EIC": "3+kids",
                 "value": 19030.0
+            },
+            {
+                "year": 2020,
+                "EIC": "0kids",
+                "value": 8790.0
+            },
+            {
+                "year": 2020,
+                "EIC": "1kid",
+                "value": 19330.0
+            },
+            {
+                "year": 2020,
+                "EIC": "2kids",
+                "value": 19330.0
+            },
+            {
+                "year": 2020,
+                "EIC": "3+kids",
+                "value": 19330.0
+            },
+            {
+                "year": 2021,
+                "EIC": "0kids",
+                "value": 8880.0
+            },
+            {
+                "year": 2021,
+                "EIC": "1kid",
+                "value": 19520.0
+            },
+            {
+                "year": 2021,
+                "EIC": "2kids",
+                "value": 19520.0
+            },
+            {
+                "year": 2021,
+                "EIC": "3+kids",
+                "value": 19520.0
             }
         ],
         "validators": {
@@ -14677,6 +14757,46 @@
                 "year": 2019,
                 "EIC": "3+kids",
                 "value": 5790.0
+            },
+            {
+                "year": 2020,
+                "EIC": "0kids",
+                "value": 5890.0
+            },
+            {
+                "year": 2020,
+                "EIC": "1kid",
+                "value": 5890.0
+            },
+            {
+                "year": 2020,
+                "EIC": "2kids",
+                "value": 5890.0
+            },
+            {
+                "year": 2020,
+                "EIC": "3+kids",
+                "value": 5890.0
+            },
+            {
+                "year": 2021,
+                "EIC": "0kids",
+                "value": 5940.0
+            },
+            {
+                "year": 2021,
+                "EIC": "1kid",
+                "value": 5950.0
+            },
+            {
+                "year": 2021,
+                "EIC": "2kids",
+                "value": 5950.0
+            },
+            {
+                "year": 2021,
+                "EIC": "3+kids",
+                "value": 5950.0
             }
         ],
         "validators": {
@@ -14779,6 +14899,14 @@
             {
                 "year": 2019,
                 "value": 3600.0
+            },
+            {
+                "year": 2020,
+                "value": 3650.0
+            },
+            {
+                "year": 2021,
+                "value": 3650.0
             }
         ],
         "validators": {
