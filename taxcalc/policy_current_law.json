@@ -16133,6 +16133,178 @@
             "cps": true
         }
     },
+    "CDCC_new_c": {
+	    "title": "Maximum new child & dependent care refundable credit per dependent (max of CDCC_new_c*2 for two or more children)",
+	    "description": "The maximum amount of refundable credit allowed for each qualifying dependent.",
+	    "notes": "This parameter is not reflected in current law.",
+	    "section_1": "Refundable Credits",
+	    "section_2": "New Child And Dependent Care",
+	    "indexable": true,
+	    "indexed": false,
+	    "type": "float",
+	    "value": [
+	        {
+	            "year": 2013,
+	            "value": 0.0
+	        }
+	    ],
+	    "validators": {
+	        "range": {
+	            "min": 0,
+	            "max": 9e+99
+	        }
+	    },
+	      "compatible_data": {
+	          "puf": true,
+	          "cps": true
+	      }
+    },
+    "CDCC_new_rt": {
+        "title": "New child & dependent care refundable credit rate",
+        "description": "This is the fraction of eligible child and dependent care expenses used in calculating CDCC_new.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "New Child And Dependent Care",
+        "indexable": false,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 1
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CDCC_new_ps": {
+        "title": "New child & dependent care credit phaseout start",
+        "description": "For taxpayers with AGI over this amount, the credit is reduced.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "New Child And Dependent Care",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "MARS": "single",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mjoint",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mseparate",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "headhh",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "widow",
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CDCC_new_pe": {
+        "title": "New child & dependent care credit phaseout end",
+        "description": "For taxpayers with AGI over this amount, the credit is disallowed.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "New Child And Dependent Care",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "MARS": "single",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mjoint",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mseparate",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "headhh",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "widow",
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CDCC_new_prt": {
+        "title": "New child & dependent care refundable credit phaseout rate",
+        "description": "The total amount for the new child and dependent care credit is reduced at this rate per dollar exceeding the phaseout starting agi.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "New Child And Dependent Care",
+        "indexable": false,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 1
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
     "FST_AGI_trt": {
         "title": "New minimum tax; rate as a decimal fraction of AGI",
         "description": "Individual income taxes and the employee share of payroll taxes are credited against this minimum tax, so the surtax is the difference between the tax rate times AGI and the credited taxes. The new minimum tax is similar to the Fair Share Tax, except that no credits are exempted from the base.",

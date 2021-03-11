@@ -1041,6 +1041,12 @@
       "desc": "search taxcalc/calcfunctions.py for how calculated and used",
       "form": {"2013-20??": "calculated variable"}
     },
+    "cdcc_new": {
+      "type": "float",
+      "desc": "Refundable new child and dependent care credit",
+      "form": {"2013-20??": "calculated variable"},
+      "availability": "taxdata_puf, taxdata_cps"
+    },
     "odc": {
       "type": "float",
       "desc": "Other Dependent Credit",

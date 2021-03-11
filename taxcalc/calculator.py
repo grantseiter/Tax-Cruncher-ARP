@@ -19,6 +19,7 @@ from taxcalc.calcfunctions import (TaxInc, SchXYZTax, GainsTax, AGIsurtax,
                                    RefundablePayrollTaxCredit,
                                    ChildDepTaxCredit, AdditionalCTC, CTC_new,
                                    Recovery_Rebate, TwoStepChildTaxCredit,
+                                   CDCC_new,
                                    PersonalTaxCredit, SchR,
                                    AmOppCreditParts, EducationTaxCredit,
                                    CharityCredit,
@@ -1445,6 +1446,7 @@ class Calculator():
         AdditionalCTC(self.__policy, self.__records)
         Recovery_Rebate(self.__policy, self.__records)
         TwoStepChildTaxCredit(self.__policy, self.__records)
+        CDCC_new(self.__policy, self.__records)
         C1040(self.__policy, self.__records)
         CTC_new(self.__policy, self.__records)
         IITAX(self.__policy, self.__records)

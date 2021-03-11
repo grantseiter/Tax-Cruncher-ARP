@@ -1835,15 +1835,35 @@ def TwoStepChildTaxCredit(n24, nu06, nu18, MARS, c00100,
 
 
 @iterate_jit(nopython=True)
+def CDCC_new(CDCC_new_c, CDCC_new_rt, CDCC_new_ps, CDCC_new_pe, CDCC_new_prt, cdcc_new,
+            MARS, f2441, e32800, earned_s, earned_p, c05800, e07300, c00100):
+    """
+    Calculates new refundable child and dependent care expense credit, cdcc_new.
+    """
+    # credit for at most two cared-for individuals and for actual expenses
+    cdcc_new_max_credit = min(f2441, 2) * CDCC_new_c
+    cdcc_new = max(0., min(e32800 * CDCC_new_rt, cdcc_new_max_credit))
+    # phaseout based on agi
+    positiveagi = max(c00100, 0.)
+    cdcc_min = CDCC_new_ps[MARS - 1]
+    if positiveagi < cdcc_min:
+        cdcc_new = cdcc_new
+    else:
+        cdcc_new_reduced = max(0., cdcc_new - (CDCC_new_prt * (positiveagi - cdcc_min)))
+        cdcc_new = min(cdcc_new, cdcc_new_reduced)
+    return cdcc_new
+
+
+@iterate_jit(nopython=True)
 def IITAX(c59660, c11070, c10960, personal_refundable_credit, ctc_new, rptc,
-          c09200, payrolltax, recoveryrebate, twostepctc,
+          c09200, payrolltax, recoveryrebate, twostepctc, cdcc_new,
           eitc, refund, iitax, combined):
     """
     Computes final taxes.
     """
     eitc = c59660
     refund = (eitc + c11070 + c10960 +
-              personal_refundable_credit + ctc_new + rptc + recoveryrebate + twostepctc)
+              personal_refundable_credit + ctc_new + rptc + recoveryrebate + twostepctc + cdcc_new)
     iitax = c09200 - refund
     combined = iitax + payrolltax
     return (eitc, refund, iitax, combined)
