@@ -1030,6 +1030,12 @@
       "desc": "search taxcalc/calcfunctions.py for how calculated and used",
       "form": {"2013-20??": "calculated variable"}
     },
+    "recoveryrebate": {
+      "type": "float",
+      "desc": "Recovery rebates to individuals",
+      "form": {"2013-20??": "calculated variable"},
+      "availability": "taxdata_puf, taxdata_cps"
+    },
     "odc": {
       "type": "float",
       "desc": "Other Dependent Credit",

@@ -15737,6 +15737,152 @@
             "cps": true
         }
     },
+    "Rebate_c": {
+    "title": "Maximum recovery rebate per eligible person",
+    "description": "The maximum amount of the refundable credit allowed for each eligible person.",
+    "notes": "",
+    "section_1": "Refundable Credits",
+    "section_2": "Recovery Rebate",
+    "indexable": true,
+    "indexed": false,
+    "type": "float",
+    "value": [
+        {
+            "year": 2013,
+            "value": 0.0
+        }
+    ],
+    "validators": {
+        "range": {
+            "min": 0,
+            "max": 9e+99
+        }
+    },
+      "compatible_data": {
+          "puf": true,
+          "cps": true
+      }
+    },
+    "Rebate_ps": {
+        "title": "Recovery rebate phaseout start",
+        "description": "For taxpayers with AGI over this amount, the refundable credit is reduced.",
+        "notes": "",
+        "section_1": "Refundable Credits",
+        "section_2": "Recovery Rebate",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "MARS": "single",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mjoint",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mseparate",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "headhh",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "widow",
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "Rebate_pe": {
+        "title": "Recovery rebate phaseout end",
+        "description": "For taxpayers with AGI over this amount, the refundable credit is reduced to 0.",
+        "notes": "",
+        "section_1": "Refundable Credits",
+        "section_2": "Recovery Rebate",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "MARS": "single",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mjoint",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mseparate",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "headhh",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "widow",
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "Rebate_prt": {
+        "title": "Recovery rebate phaseout rate",
+        "description": "The total amount of the refunable credit is reduced at this rate per dollar exceeding the phaseout starting agi.",
+        "notes": "",
+        "section_1": "Refundable Credits",
+        "section_2": "Recovery Rebate",
+        "indexable": false,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 1
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
     "FST_AGI_trt": {
         "title": "New minimum tax; rate as a decimal fraction of AGI",
         "description": "Individual income taxes and the employee share of payroll taxes are credited against this minimum tax, so the surtax is the difference between the tax rate times AGI and the credited taxes. The new minimum tax is similar to the Fair Share Tax, except that no credits are exempted from the base.",

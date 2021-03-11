@@ -18,6 +18,7 @@ from taxcalc.calcfunctions import (TaxInc, SchXYZTax, GainsTax, AGIsurtax,
                                    StdDed, AdditionalMedicareTax, F2441, EITC,
                                    RefundablePayrollTaxCredit,
                                    ChildDepTaxCredit, AdditionalCTC, CTC_new,
+                                   Recovery_Rebate,
                                    PersonalTaxCredit, SchR,
                                    AmOppCreditParts, EducationTaxCredit,
                                    CharityCredit,
@@ -1442,6 +1443,7 @@ class Calculator():
         ChildDepTaxCredit(self.__policy, self.__records)
         NonrefundableCredits(self.__policy, self.__records)
         AdditionalCTC(self.__policy, self.__records)
+        Recovery_Rebate(self.__policy, self.__records)
         C1040(self.__policy, self.__records)
         CTC_new(self.__policy, self.__records)
         IITAX(self.__policy, self.__records)

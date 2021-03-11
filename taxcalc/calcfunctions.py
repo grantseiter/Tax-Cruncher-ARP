@@ -1777,15 +1777,41 @@ def CTC_new(CTC_new_c, CTC_new_rt, CTC_new_c_under6_bonus,
 
 
 @iterate_jit(nopython=True)
+def Recovery_Rebate(Rebate_c, Rebate_ps, Rebate_pe, Rebate_prt, XTOT, DSI,
+            MARS, c00100):
+    """
+    Calculates recovery rebate for individuals, recoveryrebate.
+    """
+    # credit for qualifying individuals
+    if DSI:
+        rebate_max_credit = 0.
+    else:
+        rebate_max_credit = XTOT * Rebate_c
+    # phaseout based on agi
+    positiveagi = max(c00100, 0.)
+    rebate_min = Rebate_ps[MARS - 1]
+    rebate_max = Rebate_pe[MARS - 1]
+    if positiveagi < rebate_min:
+        recoveryrebate = rebate_max_credit
+    else:
+        if positiveagi > rebate_max:
+            recoveryrebate = 0.
+        else:
+            rebate_reduced = max(0., rebate_max_credit - (Rebate_prt * (positiveagi - rebate_min)))
+            recoveryrebate = min(rebate_max_credit, rebate_reduced)
+    return recoveryrebate
+
+
+@iterate_jit(nopython=True)
 def IITAX(c59660, c11070, c10960, personal_refundable_credit, ctc_new, rptc,
-          c09200, payrolltax,
+          c09200, payrolltax, recoveryrebate,
           eitc, refund, iitax, combined):
     """
     Computes final taxes.
     """
     eitc = c59660
     refund = (eitc + c11070 + c10960 +
-              personal_refundable_credit + ctc_new + rptc)
+              personal_refundable_credit + ctc_new + rptc + recoveryrebate)
     iitax = c09200 - refund
     combined = iitax + payrolltax
     return (eitc, refund, iitax, combined)
