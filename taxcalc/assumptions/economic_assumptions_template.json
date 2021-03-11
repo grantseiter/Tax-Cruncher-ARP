@@ -1,0 +1,77 @@
+// Parameters used to specify economic assumptions used in tax policy analysis.
+//
+// This JSON file serves as a template for specifying economic assumptions
+// about how individuals and the overall economy respond to a tax reform.
+//
+// Detailed documentation on these parameters can be found at
+// <http://PSLmodels.github.io/Tax-Calculator/#params>.
+{
+    "consumption": {
+        "MPC_e17500": {"2017": 0.0},
+        "MPC_e18400": {"2017": 0.0},
+        "MPC_e19800": {"2017": 0.0},
+        "MPC_e20400": {"2017": 0.0},
+        "BEN_housing_value": {"2017": 1.0},
+        "BEN_snap_value": {"2017": 1.0},
+        "BEN_tanf_value": {"2017": 1.0},
+        "BEN_vet_value": {"2017": 1.0},
+        "BEN_wic_value": {"2017": 1.0},
+        "BEN_mcare_value": {"2017": 1.0},
+        "BEN_mcaid_value": {"2017": 1.0},
+        "BEN_other_value": {"2017": 1.0}
+    },
+    "growdiff_baseline": {
+        "ABOOK": {"2017": 0.0},
+        "ACGNS": {"2017": 0.0},
+        "ACPIM": {"2017": 0.0},
+        "ACPIU": {"2017": 0.0},
+        "ADIVS": {"2017": 0.0},
+        "AINTS": {"2017": 0.0},
+        "AIPD": {"2017": 0.0},
+        "ASCHCI": {"2017": 0.0},
+        "ASCHCL": {"2017": 0.0},
+        "ASCHEI": {"2017": 0.0},
+        "ASCHEL": {"2017": 0.0},
+        "ASCHF": {"2017": 0.0},
+        "ASOCSEC": {"2017": 0.0},
+        "ATXPY": {"2017": 0.0},
+        "AUCOMP": {"2017": 0.0},
+        "AWAGE": {"2017": 0.0},
+        "ABENOTHER": {"2017": 0.0},
+        "ABENMCARE": {"2017": 0.0},
+        "ABENMCAID": {"2017": 0.0},
+        "ABENSSI": {"2017": 0.0},
+        "ABENSNAP": {"2017": 0.0},
+        "ABENWIC": {"2017": 0.0},
+        "ABENHOUSING": {"2017": 0.0},
+        "ABENTANF": {"2017": 0.0},
+        "ABENVET": {"2017": 0.0}
+    },
+    "growdiff_response": {
+        "ABOOK": {"2017": 0.0},
+        "ACGNS": {"2017": 0.0},
+        "ACPIM": {"2017": 0.0},
+        "ACPIU": {"2017": 0.0},
+        "ADIVS": {"2017": 0.0},
+        "AINTS": {"2017": 0.0},
+        "AIPD": {"2017": 0.0},
+        "ASCHCI": {"2017": 0.0},
+        "ASCHCL": {"2017": 0.0},
+        "ASCHEI": {"2017": 0.0},
+        "ASCHEL": {"2017": 0.0},
+        "ASCHF": {"2017": 0.0},
+        "ASOCSEC": {"2017": 0.0},
+        "ATXPY": {"2017": 0.0},
+        "AUCOMP": {"2017": 0.0},
+        "AWAGE": {"2017": 0.0},
+        "ABENOTHER": {"2017": 0.0},
+        "ABENMCARE": {"2017": 0.0},
+        "ABENMCAID": {"2017": 0.0},
+        "ABENSSI": {"2017": 0.0},
+        "ABENSNAP": {"2017": 0.0},
+        "ABENWIC": {"2017": 0.0},
+        "ABENHOUSING": {"2017": 0.0},
+        "ABENTANF": {"2017": 0.0},
+        "ABENVET": {"2017": 0.0}
+    }
+}
