@@ -1819,6 +1819,56 @@
                 "value": 24400.0
             },
             {
+                "year": 2020,
+                "MARS": "single",
+                "value": 12400.0
+            },
+            {
+                "year": 2020,
+                "MARS": "mjoint",
+                "value": 24800.0
+            },
+            {
+                "year": 2020,
+                "MARS": "mseparate",
+                "value": 12400.0
+            },
+            {
+                "year": 2020,
+                "MARS": "headhh",
+                "value": 18650.0
+            },
+            {
+                "year": 2020,
+                "MARS": "widow",
+                "value": 24800.0
+            },
+            {
+                "year": 2021,
+                "MARS": "single",
+                "value": 12550.0
+            },
+            {
+                "year": 2021,
+                "MARS": "mjoint",
+                "value": 25100.0
+            },
+            {
+                "year": 2021,
+                "MARS": "mseparate",
+                "value": 12550.0
+            },
+            {
+                "year": 2021,
+                "MARS": "headhh",
+                "value": 18800.0
+            },
+            {
+                "year": 2021,
+                "MARS": "widow",
+                "value": 25100.0
+            },
+            {
                 "year": 2026,
                 "MARS": "single",
                 "value": 7355.0
