@@ -1036,6 +1036,11 @@
       "form": {"2013-20??": "calculated variable"},
       "availability": "taxdata_puf, taxdata_cps"
     },
+    "twostepctc": {
+      "type": "float",
+      "desc": "search taxcalc/calcfunctions.py for how calculated and used",
+      "form": {"2013-20??": "calculated variable"}
+    },
     "odc": {
       "type": "float",
       "desc": "Other Dependent Credit",

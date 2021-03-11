@@ -1803,15 +1803,47 @@ def Recovery_Rebate(Rebate_c, Rebate_ps, Rebate_pe, Rebate_prt, XTOT, DSI,
 
 
 @iterate_jit(nopython=True)
+def TwoStepChildTaxCredit(n24, nu06, nu18, MARS, c00100,
+                   CTC_2Step_c1, CTC_2Step_c1_under6_bonus,
+                   CTC_2Step_ps1, CTC_2Step_prt1,
+                   CTC_2Step_c2, CTC_2Step_c2_under6_bonus,
+                   CTC_2Step_ps2, CTC_2Step_prt2,
+                   XTOT, n1820, n21, num):
+    """
+    Computes the proposed refundable child tax credit Scheduled For Markup by The
+    House Committee on Ways and Means on February 10, 2021.
+    """
+    if n24 > 0:
+        step1 = CTC_2Step_c1 * nu18 + CTC_2Step_c1_under6_bonus * nu06
+        step2 = CTC_2Step_c2 * nu18 + CTC_2Step_c2_under6_bonus * nu06
+        posagi = max(c00100, 0.)
+        ymax1 = CTC_2Step_ps1[MARS - 1]
+        ymax2 = CTC_2Step_ps2[MARS - 1]
+        if posagi > ymax1:
+            step1_reduced = max(step2, step1 - CTC_2Step_prt1 * (posagi - ymax1))
+            if posagi > ymax2:
+                step2_reduced = max(0., step1_reduced - CTC_2Step_prt2 * (posagi - ymax2))
+                twostepctc = min(step1_reduced, step2_reduced)
+            else:
+                step2_reduced = max(0., step1_reduced)
+                twostepctc = min(step1_reduced, step2_reduced)
+        else:
+            twostepctc = max(0., step1)
+    else:
+        twostepctc = 0.
+    return twostepctc
+
+
+@iterate_jit(nopython=True)
 def IITAX(c59660, c11070, c10960, personal_refundable_credit, ctc_new, rptc,
-          c09200, payrolltax, recoveryrebate,
+          c09200, payrolltax, recoveryrebate, twostepctc,
           eitc, refund, iitax, combined):
     """
     Computes final taxes.
     """
     eitc = c59660
     refund = (eitc + c11070 + c10960 +
-              personal_refundable_credit + ctc_new + rptc + recoveryrebate)
+              personal_refundable_credit + ctc_new + rptc + recoveryrebate + twostepctc)
     iitax = c09200 - refund
     combined = iitax + payrolltax
     return (eitc, refund, iitax, combined)

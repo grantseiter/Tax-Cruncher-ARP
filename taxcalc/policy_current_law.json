@@ -15883,6 +15883,256 @@
             "cps": true
         }
     },
+"CTC_2Step_c1": {
+        "title": "Two Step refundable child tax credit maximum amount per child",
+        "description": "In addition to all credits currently available for dependents, this parameter gives each qualifying child a Two Step refundable credit with this maximum amount (step 1).",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CTC_2Step_c1_under6_bonus": {
+        "title": "Bonus Two Step refundable child tax credit maximum for qualifying children under defined age threshold",
+        "description": "This parameter is not reflected in current law.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CTC_2Step_ps1": {
+        "title": "Two Step refundable child tax credit phaseout starting AGI",
+        "description": "The total amount of Two Step child tax credit step 1 is reduced for taxpayers with AGI higher than this level.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "MARS": "single",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mjoint",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mseparate",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "headhh",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "widow",
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CTC_2Step_prt1": {
+        "title": "Two Step refundable child tax credit amount phase out rate",
+        "description": "The maximum amount of the Two Step child tax credit step 1 is is reduced at this rate per dollar exceeding the phaseout starting AGI.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": false,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+     "CTC_2Step_c2": {
+        "title": "Two Step refundable child tax credit maximum amount per child",
+        "description": "In addition to all credits currently available for dependents, this parameter gives each qualifying child a Two Step refundable credit with this maximum amount (step 2).",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CTC_2Step_c2_under6_bonus": {
+        "title": "Bonus Two Step refundable child tax credit maximum for qualifying children under defined age threshold",
+        "description": "The maximum amount of the Two Step refundable child tax credit step 2 allowed for each child is increased by this amount for qualifying children under 6 years old.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CTC_2Step_ps2": {
+        "title": "Two Step refundable child tax credit phaseout starting AGI",
+        "description": "The total amount of Two Step child tax credit step 2 is reduced for taxpayers with AGI higher than this level.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": true,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "MARS": "single",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mjoint",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "mseparate",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "headhh",
+                "value": 0.0
+            },
+            {
+                "year": 2013,
+                "MARS": "widow",
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
+    "CTC_2Step_prt2": {
+        "title": "Two Step refundable child tax credit amount phase out rate",
+        "description": "The maximum amount of the Two Step child tax credit step 2 is is reduced at this rate per dollar exceeding the phaseout starting AGI.",
+        "notes": "This parameter is not reflected in current law.",
+        "section_1": "Refundable Credits",
+        "section_2": "Two Step Refundable Child Tax Credit",
+        "indexable": false,
+        "indexed": false,
+        "type": "float",
+        "value": [
+            {
+                "year": 2013,
+                "value": 0.0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 9e+99
+            }
+        },
+        "compatible_data": {
+            "puf": true,
+            "cps": true
+        }
+    },
     "FST_AGI_trt": {
         "title": "New minimum tax; rate as a decimal fraction of AGI",
         "description": "Individual income taxes and the employee share of payroll taxes are credited against this minimum tax, so the surtax is the difference between the tax rate times AGI and the credited taxes. The new minimum tax is similar to the Fair Share Tax, except that no credits are exempted from the base.",
