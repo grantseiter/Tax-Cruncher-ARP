@@ -36,7 +36,7 @@
         "type": "int",
         "value": [
             {
-                "value": 2019
+                "value": 2021
             }
         ],
         "validators": {
@@ -102,8 +102,44 @@
             }
         }
     },
-    "dep13": {
-        "title": "Number of children under 13",
+    "dep6": {
+        "title": "Number of children under age 6",
+        "description": "",
+        "section_1": "Dependents",
+        "notes": "",
+        "type": "int",
+        "value": [
+            {
+                "value": 0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 10
+            }
+        }
+    },
+    "dep12": {
+        "title": "Number of children from age 6 to 12",
+        "description": "",
+        "section_1": "Dependents",
+        "notes": "",
+        "type": "int",
+        "value": [
+            {
+                "value": 0
+            }
+        ],
+        "validators": {
+            "range": {
+                "min": 0,
+                "max": 10
+            }
+        }
+    },
+    "dep16": {
+        "title": "Number of children from age 13 to 16",
         "description": "",
         "section_1": "Dependents",
         "notes": "",
@@ -121,7 +157,7 @@
         }
     },
     "dep17": {
-        "title": "Number of children from 13 to 16",
+        "title": "Number of children age 17",
         "description": "",
         "section_1": "Dependents",
         "notes": "",
@@ -139,7 +175,7 @@
         }
     },
     "dep18": {
-        "title": "Number of children from 17 to 18 AND from 19 to 24 and a full-time student",
+        "title": "Number of children age 18 AND from age 19 to 24 and a full-time student",
         "description": "",
         "section_1": "Dependents",
         "notes": "",

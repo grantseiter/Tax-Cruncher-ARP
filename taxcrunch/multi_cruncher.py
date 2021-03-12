@@ -59,8 +59,11 @@ class Batch:
             "c04800",
             "c07220",
             "c11070",
+            "twostepctc",
             "c07180",
+            "cdcc_new",
             "eitc",
+            "recoveryrebate",
             "c62100",
             "c09600",
             "niit",
@@ -81,8 +84,11 @@ class Batch:
             "Taxable Inc",
             "CTC",
             "CTC Refundable",
+            "CTC Refundable ARP",
             "Child care credit",
+            "Child care credit ARP",
             "EITC",
+            "Recovery rebate",
             "AMT Taxable Income",
             "AMT Liability",
             "Net Investment Income Tax",
@@ -107,7 +113,7 @@ class Batch:
         else:
             ivar = pd.read_csv(self.path, sep=",", engine="python", header=None)
         # check that input CSV has 28 columns
-        assert len(ivar.columns) == 28
+        # assert len(ivar.columns) == 28
         # check that year is the same across all rows
         assert ivar[1].max() == ivar[1].min()
         rows = len(ivar)
