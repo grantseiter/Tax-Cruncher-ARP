@@ -126,7 +126,7 @@ class Batch:
         params_df = pd.DataFrame(array).transpose()
 
         params_marg = params_df.copy()
-        params_marg.loc[:, 9] = params_marg.loc[:, 9] + FINITE_DIFF
+        params_marg.loc[:, 11] = params_marg.loc[:, 11] + FINITE_DIFF
 
         # translate INPUT variables into OUTPUT variables
         c = cr.Cruncher()

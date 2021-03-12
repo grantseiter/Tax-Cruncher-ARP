@@ -113,11 +113,11 @@ class Cruncher:
         # Single -> 1; Joint -> 2
         mstat_int = np.where(mstat == "Single", 1, 2)
         # convert sstb to int
-        sstb = ivar.loc[:, 16]
+        sstb = ivar.loc[:, 18]
         # True -> 1; False -> 0
         sstb_int = np.where(sstb, 1, 0)
         self.batch_ivar.loc[:, 2] = mstat_int
-        self.batch_ivar.loc[:, 16] = sstb_int
+        self.batch_ivar.loc[:, 18] = sstb_int
         return self.batch_ivar
 
     def translate(self, ivar):

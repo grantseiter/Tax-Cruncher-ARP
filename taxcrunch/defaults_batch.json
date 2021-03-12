@@ -281,7 +281,7 @@
         "description": "Service businesses may be in the fields of law, health, consulting, and financial services.",
         "section_1": "Pass-Through Income",
         "notes": "",
-        "type": "bool",
+        "type": "int",
         "number_dims": 1,
         "value": [0],
         "validators": {
