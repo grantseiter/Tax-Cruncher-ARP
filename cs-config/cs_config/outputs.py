@@ -198,9 +198,9 @@ def credit_plot(df_base, df_reform, span, mtr_opt):
                            line_dash='dashed', legend_label="Earned Income Tax Credit", muted_alpha=0.1, source=df_reform)
     ctc_reform = fig.line(x="Axis", y="CTC", line_color='#abdda4', muted_color='#abdda4', line_width=2,
                           line_dash='dashed', legend_label='Nonrefundable Child Tax Credit', muted_alpha=0.1, source=df_reform)
-    ctc_refund_reform = fig.line(x="Axis", y="CTC Refundable", line_color='#fdae61', muted_color='#fdae61',
+    ctc_refund_reform = fig.line(x="Axis", y="CTC New", line_color='#fdae61', muted_color='#fdae61',
                                  line_width=2, line_dash='dashed', legend_label='Refundable Child Tax Credit', muted_alpha=0.1, source=df_reform)
-    cdcc_reform = fig.line(x="Axis", y="Child care credit", line_color='#d7191c', muted_color='#d7191c', line_width=2,
+    cdcc_reform = fig.line(x="Axis", y="CDCC", line_color='#d7191c', muted_color='#d7191c', line_width=2,
                            line_dash='dashed', legend_label='Child and Dependent Care Credit', muted_alpha=0.1, source=df_reform)
     rebate_reform = fig.line(x="Axis", y="Recovery rebate", line_color='#800080', muted_color='#800080', line_width=2,
                            line_dash='dashed', legend_label='Recovery Rebate Credit (Stimulus Checks)', muted_alpha=0.1, source=df_reform)

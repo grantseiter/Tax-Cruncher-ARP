@@ -35,7 +35,7 @@ arp_ref = {
       "EITC_InvestIncome_c": {"2021": 10000.0},
       "EITC_excess_InvestIncome_rt": {"2021": 9e+99},
       "EITC_indiv": {"2021": False},
-      "EITC_sep_filers_elig": {"2021": False},
+      "EITC_sep_filers_elig": {"2021": True},
 
       "Rebate_c": {"2021": 1400.0},
       "Rebate_ps": {"2021": [75000.0, 150000.0, 75000.0, 112500.0, 150000.0]},
