@@ -5,7 +5,7 @@
 // Date: March 2021
 // ===========================================================#
 '''
-{
+arp_ref = {
       "CDCC_c": {"2021": 0.0},
       "CDCC_new_c": {"2021": 8000.0},
       "CDCC_new_rt": {"2021": 0.5},
@@ -34,8 +34,8 @@
       "EITC_MaxEligAge": {"2021": 125},
       "EITC_InvestIncome_c": {"2021": 10000.0},
       "EITC_excess_InvestIncome_rt": {"2021": 9e+99},
-      "EITC_indiv": {"2021": false},
-      "EITC_sep_filers_elig": {"2021": false},
+      "EITC_indiv": {"2021": False},
+      "EITC_sep_filers_elig": {"2021": False},
 
       "Rebate_c": {"2021": 1400.0},
       "Rebate_ps": {"2021": [75000.0, 150000.0, 75000.0, 112500.0, 150000.0]},
