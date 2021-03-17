@@ -6,15 +6,15 @@ Project GitHub Repo: https://github.com/grantseiter/Tax-Cruncher-ARP/
 Deployed Application: https://compute.studio/AEIEconomics/Tax-Cruncher-ARP/
 
 ### Note:
-The Tax-Cruncher-ARP simulation accepts an individual's information necessary for computing federal tax liabilities and leverages [Tax-Calculator](https://github.com/PSLmodels/Tax-Calculator), an open-source microsimulation model of federal individual income and payroll tax law. Users can explore how the [American Rescue Plan Act of 2021](https://www.congress.gov/bill/117th-congress/house-bill/1319/text) impacts their 2021 federal tax liability and compare the result to previous law (if the plan had not become law). The Tax-Cruncher-ARP simulation is solely for educational use and should not be used for tax preparation purposes.
+The Tax-Cruncher-ARP simulation accepts an individual's information necessary for computing federal tax liabilities and leverages [Tax-Calculator](https://github.com/PSLmodels/Tax-Calculator), an open-source microsimulation model of federal individual income and payroll tax law. Users can explore how the [American Rescue Plan Act of 2021](https://www.congress.gov/bill/117th-congress/house-bill/1319/text) impacts their 2021 federal tax liability and compare the result to previous law. The Tax-Cruncher-ARP simulation is solely for educational use and should not be used for tax preparation purposes.
 
 Please direct any questions about Tax-Cruncher-ARP to [Grant.Seiter@aei.org](mailto:Grant.Seiter@aei.org).
 
 The following American Rescue Plan tax provisions are included in the calculation:
-- A $1,400 recovery rebate credit for each taxpayer and qualifying dependent
+- A $1,400 recovery rebate credit per qualifying household member
 - Expansion of the Child Tax Credit
-- Expansion of Earned Income Tax Credit
-- Expansion of the Child and Dependent Care Credit
+- Expansion of the Earned Income Tax Credit
+- Expansion of the Child and Dependent Care Tax Credit
 
 ### Languages
 *Python*
